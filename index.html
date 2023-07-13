@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/91_html-css_onix7l/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Veggie boost. An easy way to order fresh organic vegetables. 
+    Fast delivary to your door. "
+    />
+    <title>Veggie boost</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    /> -->
+    
+    <script type="module" crossorigin src="/91_html-css_onix7l/assets/index-036f7c74.js"></script>
+    <link rel="stylesheet" href="/91_html-css_onix7l/assets/index-fe2f3519.css">
+  </head>
+  <body>
+    <!-- Katerina -->
+    <section class="header">
+  <div class="container header-container">
+    <nav class="header-navigation">
+      <ul class="header-list">
+        <li class="header-list-item">
+          <a class="header-item-link" href="#order">How It Works</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-item-link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-item-link" href="#contact">Contacts</a>
+        </li>
+      </ul>
+
+      <a href="./index.html" class="header-logo">
+        <svg width="16" height="16">
+          <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-logo" class="header-logo-img"></use>
+        </svg>
+        Veggieboost
+      </a>
+    </nav>
+
+    <button type="button" class="header-menu-open js-open-menu" title="menu">
+      <svg width="24" height="24" class="header-menu-icon">
+        <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <button
+      type="button"
+      class="header-menu-order data-modal-open-3"
+      title="basket"
+    >
+      <svg width="20" height="20" class="header-order-icon">
+        <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-shop-bascket"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+    <!-- Olesya -->
+    <div class="mobile-container js-menu-container">
+  <div class="mobile-wrapper-top">
+    <a class="mobile-logo" href="./index.html">
+      <svg class="mobile-logo-icon" width="16" height="16">
+        <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-logo"></use></svg
+      >Veggieboost
+    </a>
+    <button type="button" class="mobile-close-btn js-close-menu">
+      <svg class="mobile-close-icon" width="24" height="24">
+        <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#order">How It Works</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#vegetables">Vegetables</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#contact">Contacts</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#modal" class="data-modal-open-2">
+          <svg class="mobile-nav-icon" width="20" height="20">
+            <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-shop-bascket"></use></svg
+        ></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <!-- Marina -->
+    <section class="hero" id="hero">
+  <div class="container hero-container">
+    <!-- nex div for position its oll for 161 with girl -->
+
+    <div class="hero-container-wrapper">
+      <!-- wrapper girl-->
+
+      <div class="hero-main-list">
+        <ul class="hero-icons-list">
+          <li class="hero-list-item hero-position-one">
+            <picture class="hero-icon-media">
+              <source
+                media="(max-width: 767px)"
+                srcset="data:image/webp;base64,UklGRjgCAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSL0AAAABgFDbTl3pSoiD1gl1UglIQEIkIAEJlYCESIiEvN/wuWsERMQEYDLlZh7hvZWE9VI8hq0ea0RjYT0WZI+ldk9pLNcxeWJjl5EeW58Bjc36xx3b84/T9rl81SBUAGdQClA5CmAcjhSkqbDkxtI6izmLx7/rLG4svbG0zFISywXnMKBwVEA4DgDKUAFAfJ8dX8j7bvzWXYq/nz0dg9J3PDIC6DrF7G1rPGP+rCtUsPSsNuZFsP4qrXuEW8sXJgEAVlA4IFQBAADQBgCdASooACgAPpFCmkqlo6I1I4wCoBIJYw2wBShVnASQ/xa0EwQb/sWm8mrt5d4iFCtl8xaDHglaSE1RxCAA/tLRtyRwt040+rvZXoRdNv/oPzp60t0Y0SnXQIx9uqFs/+Z86tJSlzxIdW44x6v2/iOI3Ngd2vFgMYIVCeseqaNDwx2+OpRZcZREnSz3DjZT07xQfSwSFtJtS0Mb5/zr2DiHb1y01UwgPxgzoSKkamcUIMh/NTWP7CDEdK74NqpykBbQOJfNMsFftzGnkRPZllJOD9FNIssnL7up2b+NuJb1tbgRs5/2FyTLgttV8p9gKqQRQ/FDOzQjp7w/L/gfv1K8QlkDsr1mmbrKCbHcQeClOgYdgmbWAnWk7EGBSrgKyok6ZfpF4Wn5496VL9XiTkrPOpd326H/8vEhpeCJS/+vyP/+rn37+lz1I+4q9p0RkAAA 1x, data:image/webp;base64,UklGRn4EAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSHwBAAABkFXbVhxBV8JzAE5SDigHSIgEJCABCZGABCRcCU/C66EGAq+Hz4iYANwt6WydNDPT0Vs5BBtLqrSJbEn2OC61+S0tJ0XtZuawkhS1BVnWybRFmdeI3Ra+wgKn2tKa75Jqy9d74rANR7gh0rZkmBZpmzJMirRtGaZE2sYMM4ZtPeS7apvXr7Jtf34RdT8Nn13mYP8om4v5E/pAeVfMyfIm0guVV9ncLK/oh75I5ujxW/PkAiDmqQqQXLEENF8qQF8IMWfl8CYVb87mTeve9OEN1R3770tv1J3RvenNm3Z6U5I3D/FGQF8IVF8akHxJgKgrAuDypAHA4Un6DeoH8bL4kV+JesHwCsWLgrdCH4gPsw/5E3QPLnwcdT8Nn+HcL+PbulvF1zL2GpgYuRPDDETuw4C5kbswYHbkHgyYH8cOI+DWul4V3Jx1LT1xf7xW6gFLZq7CjGULV9AiWDhm3qVFsPqz3aDXA1vKs3EG61OwsTxK60N/I3s7n4K7AVZQOCDcAgAAkA8AnQEqUABQAD6NNpdHpSKiqTH23FkgEYljAL+uJt72KX8Db6c+S8CDqwT6ZliO3nF6vJuVfRlv5lJmHIFB6RNITytIa7OJHYXfDw3CGo3XUFi1mYu/ID0Ufzyr/4Yvs2jHTZibW//4iuZCqbWB9thXmZb93GzGiASYj5U08XxNl5LAQAD+76z/9x0M1DjCbH/8Fm44oaSf1DytQWBWTc+K99VeFXG6vbnDE3sU7qinJJ30wfxAL9KCAvQpwvKvY005rmD+0nf+PD//1Rn/9Vif/9UcIUEKyExvx+/GaM4adVvTv71214Mhn0clTUg6UzI+Ys5cyDfB0FV5/ApWb2F3ssmYkQToCdhUZNhF9eqe5/7JTNU/tagvYVNJOQElsDydDjrFfvOteY6XQ2dEWimgpQHswBVio9yDnuaRc4jbBy1I92gZrbCcCos5bKxYikIJ2F/CBNJoNy+CS56Rhnw3Muw8PloHUtHH+Yzde/qUkhr0EVfOfT46oc0bqtStb56WB/u6GcMvgnGF1yObZx5jMoTi8hBoWPcDTHkRQsyun050cJCIQ0cTF4X+D3dDJverlMxPexY8gA8Y3Fi1GrtSRiB8twKanFPbmtuNKKR8xYnm2xZfjlfvWsJDF0K7P8FEjzE26HLfhqwmPjoBqzEULg2E3AIWmLFhNAyu+DvEUCEp9FxftyyyOVTzns/p+UNq1VSm1cfxOMGF81Iclf8IvDN7sGmJsIRYB3aaLL9XGC8p/GAX1e3XBoVvl12ifMOFlmRalWkqHQq7P0KZM8XunfsXwqdW4RgNkFP8wrNa961uww5C/OJ6J55ytsorer1DGFsxBT/PEBKJigjE/05Pv+OKC2s54NyVp/mrMSeeJ2ieR0g6f783+L9nCr4sz6D4le1vZLW4qK4aVJ0wO7T3aOq4UrUCEueVU2cZmcNdweQPcs3PVjFD/KEpN8io41aZCGQKE275QAAA 2x"
+              />
+              <source
+                media="(max-width: 1279px)"
+                srcset="data:image/webp;base64,UklGRsYDAABXRUJQVlA4WAoAAAAQAAAAQQAAQQAAQUxQSDIBAAABkFVbb91oHwQzsBmkDDoMPAwyTApBEAQhUAxBEARBD7k5+ua/PEbEBGB+XWUbFhFhY5O+IPtbPG6b9kTt4zHZtOZoGo9qfa5IPK71oe6R0NYnikRSKdPaiLRWJy0Wia1OWTxS+zKheST35VazSG/1RrEgHOWaBKVcWoO0X2jG4uVMg1ZOWhDXI2XSgxbUdadcn51xOYAe5G9A2QQwNscr6GvnW4VPNr5t8A3js/hvaHw2+MbGtwmf/PD1xveCsxkgbAq82ToA5zIA+HDprnHVHZRJcdiY6hGER3FanMXqGTrLiqvCIbhcBoOVa2iWzyruLp7NK+4vnssXzGyWyRbMbZZnVMwukkUKHlwtg3c82/Q5KXi86TNakbKpzfJPRd5vtXsuX8j++pZt2M7GJj8N8wFWUDggbgIAAJALAJ0BKkIAQgA+kUCbSiWjv6Gj9Vy78BIJYwZwDJrF/QKWZ24HPdMYGZNEJ7bw8JSVRIM1ououZpMDveoBFp8ipBGPxu65jAyo/bo9X/4+ZID1+jI6gnnriukkFOtNQVzwUagAAP7H//+i3//WT///Q4syXzP9y2L9o+qKIfCk7wWgU2n/JzCpf6ngsQKZnWXggeYpdEokxxm1scY7oAh52RVYqGjJlVdgo62e0i1sfEa74x85P/9MV/+uff//SpsGJw15ur80hJE5d0f2pRqVHOX8oucd3Hem4X0TWrkHKUyU3H43s/yt43T1OPtQ5kKNmSsbWJmZ+mom9/vAX7J4eBrA1tL/D0NFGG43Qk7t25ioibm6xhoDmLx4FhRrq0wz9KmFRA9i0o6HETfgbxXIlDIPpRmSrtNr5FgzWfKbVlmXCar4fxDv7XOH7O9D5SRhjCbwyHGo2liCuFxkiCVmSFk5DTSog49j0XbeMfEJMC+NrUURgvlkxXMNVdED2ah9SC1jyYzbTacBlsw9mnUKcKcrHNHcSk7FQxK8kC54tq6bQ9XPcz3E+zkDe6mF874fbCVmNiBj3zN6orZOy7LAaeKT588SrR28sUDAg0/w4vJaKCNgL0ovefisPl6ecbsfMaQUmYsZQ/qa4jDaSRqeNlPaqjh/+wBHp/2GhqFSRtohaKdTd8SkOiPgPDmjGuFI8LCnZv/ciaT55SJmONU/q622Hp3YLcppC0GaJ3xBFCM8V1ejYfLBhWZJKub78NHWBLFUVahTAC9fcXqKvjIjTwntJXsAphqxMGB/8chOGUPIJXW6GN3Y/quAAAA= 1x, data:image/webp;base64,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 2x"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="data:image/webp;base64,UklGRsgCAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOQAAAABgBDZbt3qQhADmUnKxGUQCIEgCIYQCIYgCIJgCHpfx74lEBETgIVazWNkZnSriv1yRT4M0z1Hz6VN15U7lzdddI7cGHWJ5WZ7Jp7bXR6IJ6HLnCelT1mS2kRN2vOfEjxD/2pJfP9Rkvr41bg6gJLkAhjbBQRboCS9Vr5qfNb5PPgi+ccHfOT4gOAL5+vGZ2++WvgUwRbAxWaAsCmAztUA4ODSX7iZGv4sgyf0L5w8Ff8bi2HWORzT4gwucxDf54LHtsuwssaOcWJtaetuxfLS1vQXthaLJ3EJ9pdqPTJzhNu7YCFWUDggvgEAADAKAJ0BKjIAMgA+kTyYSKWjIqEwEgwAsBIJYwDGAji/Rx1ef/IwmVU9sr4ApgZP5DkOmXQ7AmFPnRemNeQ0TtJYCrKDm3NpPnNToQqhj3Zb6y3uMMRk6I32AAD+7GI+PBbiL2uVR1fYjMUMNhutqD5c9TfyoZwBTJw4RF2b6XGFoHCaJ+cwGXjprEY8uowEziEsXB97F+G7MWktDxTTXl4IQzr9otXT7vgs7vuKBQ1yalhoSXPfxVUQ/+fAf//4RiK8yems4XIuYDmJI8LBUlCNBU1lJpnXaJjbmMcqhp0cXXFpJpv8MQb2e14Zql1hSaQ289KLE02M2ZWKBeD98gS0t0MsYNMbIYW5YT89NYby/E8h7DJ2zO1Tw2QTGT+TBpT0fiv0OBGdqZNt43dcyZolLSaerfqwKZKl5eC3sKewYnf6610AfpwKsMtxWrZ20foE/XPya0cED5mAzV5E/8v5hC34w5WVRxSLV/+87N/Wlz/t7d5BHVXLejwbcagzNSR7veLB/0x0vS4CwlGd3tHwNeDazwgrzoxZ7/mRb//8th8HAO8EsOneqWPtR/0Gt8zhIi4tmS4cMu+OkAAA 1x, data:image/webp;base64,UklGRrIFAABXRUJQVlA4WAoAAAAQAAAAYwAAYwAAQUxQSN0BAAABkFXbVt5qWwIOwAF1kDq410EkIKESjgQkRAISIuFIOBLOQ9I2gc338xYRE4Buw0+RbVdzdzdtTcoSQDWWqn6pbmsmsYj6rVqX4cJr9w51jSNlMe+1xlFS865rHCGId19jd8V8QF37Ss0HbbGjYj6slV6C+NDSR9p9cI0dJPXhNd6WzQlavimbU7R8SzYnafmGZE7T4mVJnajGq9Sp7uEacbJySXG65YJkfCx+15xw+2p1yuWLpJwsfFadtHyUnHb8pPJqHyQnnt9VZvImOXMLZys1f50pt/1kcfLLobKTg7JTAA+nH4GVXwE2fhVQforgEwzLDH7KDIrMQNoMtinsOgO1GZj/d7QZmM5A9xm0bQoyAykzKD8zeIYZBCg/BSq/DSj8ViDxewBQdgoAwq4eFnbPA3ZuitMXt/UsGLV4BmFW8fbBLL5D41XxYeIVP4Gwqvg4GCeNn6FwWvFtY9TwdTI+Fr9D4VNwpbARXBp2LoqLkzLReBWS8bCI67OxsIw7s3GwjHuzMbCMu5OOpxH3Jx1tj+hSxpKATouNYwX9pjZKi+h61RGsoPdU+5OAAVPtq0UMmmo3Jg8MnFbtYX8FjP6seo/KExwf66bXaC0JVMOzSGtqB9N9k/Ib0C0AVlA4IK4DAAAQFACdASpkAGQAPpE+mkilo6KhLlXZyLASCWUDGAEEJyf0PS5t0+eqYd7vXlmcJNNgzwaAd5NFyj0Ja5kigcoqvhFJIu2KSe+exxpsUmZSAfUn4sTdxfiaDCeOXHseHPeHP7V78avYUCP01yCEIxXLF9/O7y/JOCmeC3eZlSh21B/7EA5zgmE78Cu099m3edJ7T85ApM9T7a2hh+heVe6ExXQm/4lYzqgAAP74Lv/qyf/6rE//6lGyhXms/yaDCrSVTMEwaRIW6bKRb+AUnb1Ud2JJVksJCJijjfg7xBTvcc018sH33OP7++8eSuFln/F8FDwH5fS3YTiDwv/SbUw1dv+ofGtAyrH00OOsgGDIz/BdNsKLdlPAAkno27CWJ4ml3/nRO4CZt9JIRofX7g5v/8Exo5kFnV4WPAkAhPiR3e6a5nGxCF2iwmJflN2mtDvW1T1x9VjYEAQ4Nd1kEHHGtwfNHwDV2FRTVAWLgg7bD3+AmepVJlgskj9A90nt4ivM3+munKh5mqxAbxVRKT7wBBP8izHNiLsw4Xj1GRhRv2mmrRc05N/ElGoFsqVO+K0DlGDrNq6VSh1YM3w/xDfUzDVZHI6xsUaLMrJlrvVw/mkcN/nFf4gOW2pYcPD60dPRX1WTgMMdecm5/wgbRM6vbPRd0BJcK8TDW8QEQJrSf+g6IFCsJ1yfn9yCTKC+tR9kFMjeNzhD9qvlk+hgIVrMu1rnp/aqbeyg0WK7G82ghHN334YPq6vgnecTdfTFl2dQ8nP4r96yqdkDH8Jhaj9LuN929OucTOCHcXd8BHZR57rckmKBp8eprVnqYWeOMQghtIWseHM9a12iLdKqQdqXKq4Iupzt0qHX9q43f4L53XKA3zXM+D3uxMSZgWPRV+UuRqT86V7Q7fhMZfHuwZyBQiMh+xkrinXQGXtu49522XnSgbzf1g6YBtXGze5c2vKtniZDaKn1pSRN2KzEexUI7fn1CuMshVI+Otqu++h9CvY/LEiIslfpWNsZxgO/9+WVVVqKVhqTmP3FTtxrjKO0vAiFdqsx5cd52fyu18O+8+cFpcO8xb53dlK5cip+lmrPKpwfNOmb6rXXcNrx5T9YYiVJxFfOsnQje2cezfO/v9+OinTVPXPe+/1ut8u4BbJHe0yP5zN7GYMiZEAqQ3w4U/TlMUojMiysehTwGa9mkWL2jmVIEbGy6OIbrXLTKVNX8WThoOYqNvkYSF2iFRInDhBHZOX9ZVG7nQAAAAA= 2x"
+              />
+              <img
+                src="data:image/webp;base64,UklGRjgCAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSL0AAAABgFDbTl3pSoiD1gl1UglIQEIkIAEJlYCESIiEvN/wuWsERMQEYDLlZh7hvZWE9VI8hq0ea0RjYT0WZI+ldk9pLNcxeWJjl5EeW58Bjc36xx3b84/T9rl81SBUAGdQClA5CmAcjhSkqbDkxtI6izmLx7/rLG4svbG0zFISywXnMKBwVEA4DgDKUAFAfJ8dX8j7bvzWXYq/nz0dg9J3PDIC6DrF7G1rPGP+rCtUsPSsNuZFsP4qrXuEW8sXJgEAVlA4IFQBAADQBgCdASooACgAPpFCmkqlo6I1I4wCoBIJYw2wBShVnASQ/xa0EwQb/sWm8mrt5d4iFCtl8xaDHglaSE1RxCAA/tLRtyRwt040+rvZXoRdNv/oPzp60t0Y0SnXQIx9uqFs/+Z86tJSlzxIdW44x6v2/iOI3Ngd2vFgMYIVCeseqaNDwx2+OpRZcZREnSz3DjZT07xQfSwSFtJtS0Mb5/zr2DiHb1y01UwgPxgzoSKkamcUIMh/NTWP7CDEdK74NqpykBbQOJfNMsFftzGnkRPZllJOD9FNIssnL7up2b+NuJb1tbgRs5/2FyTLgttV8p9gKqQRQ/FDOzQjp7w/L/gfv1K8QlkDsr1mmbrKCbHcQeClOgYdgmbWAnWk7EGBSrgKyok6ZfpF4Wn5496VL9XiTkrPOpd326H/8vEhpeCJS/+vyP/+rn37+lz1I+4q9p0RkAAA"
+                alt="a first woman"
+                class="hero-icon-img"
+                width="40"
+                height="40"
+              />
+            </picture>
+          </li>
+          <li class="hero-list-item hero-position-two">
+            <picture class="hero-icon-media">
+              <source
+                media="(max-width: 767px)"
+                srcset="data:image/webp;base64,UklGRjICAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSL0AAAABgFDbTl3pSoiD1gl1UglIQEIkIAEJlYCESIiEvN/wuWsERMQEYDLlZh7hvZWE9VI8hq0ea0RjYT0WZI+ldk9pLNcxeWJjl5EeW58Bjc36xx3b84/T9rl81SBUAGdQClA5CmAcjhSkqbDkxtI6izmLx7/rLG4svbG0zFISywXnMKBwVEA4DgDKUAFAfJ8dX8j7bvzWXYq/nz0dg9J3PDIC6DrF7G1rPGP+rCtUsPSsNuZFsP4qrXuEW8sXJgEAVlA4IE4BAABwBwCdASooACgAPok0lUelIqIhNVgKqKARCUAXoCzPZIz5TQBcq9+7P3MJvlpgOtLPHEM+OueD6yqJ08sIqLtLQthnHAD52Ifzac1LUnpiFj/gXs7Hr6OhORqG5FkwNr+hSkWEyVRQdlDfReGKCfCGUVKzgHhibpZbT+uvuHip6z3t7p3AQgKW9SSdKFOicsfD+03ARkDwyc0D9OWnBgrD/1gPw5xgxDFXbFvuKYSKUkykevbeb9rmB9yG60owa+FZ6rEJ0OmF0iLHRnpZQOMrDaPs402Dg5uxtGgMNz+3acY1Khx+lmIwOicjHLczSDlyaC8UK3872fj4hY6ipTkcmYVqctqwStvgs3xD5G6xsENvB6ZikO8uqP6TWU0bOypKj/CzVLEpevXwnLDHZXADGpK3eIaiScGB4vGDzB3OVz/i/wEdA3qe3E9v4AAA 1x, data:image/webp;base64,UklGRrQEAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSHwBAAABkFXbVhxBV8JzAE5SDigHSIgEJCABCZGABCRcCU/C66EGAq+Hz4iYANwt6WydNDPT0Vs5BBtLqrSJbEn2OC61+S0tJ0XtZuawkhS1BVnWybRFmdeI3Ra+wgKn2tKa75Jqy9d74rANR7gh0rZkmBZpmzJMirRtGaZE2sYMM4ZtPeS7apvXr7Jtf34RdT8Nn13mYP8om4v5E/pAeVfMyfIm0guVV9ncLK/oh75I5ujxW/PkAiDmqQqQXLEENF8qQF8IMWfl8CYVb87mTeve9OEN1R3770tv1J3RvenNm3Z6U5I3D/FGQF8IVF8akHxJgKgrAuDypAHA4Un6DeoH8bL4kV+JesHwCsWLgrdCH4gPsw/5E3QPLnwcdT8Nn+HcL+PbulvF1zL2GpgYuRPDDETuw4C5kbswYHbkHgyYH8cOI+DWul4V3Jx1LT1xf7xW6gFLZq7CjGULV9AiWDhm3qVFsPqz3aDXA1vKs3EG61OwsTxK60N/I3s7n4K7AVZQOCASAwAAsBAAnQEqUABQAD6FOJhHpSOipTC7HVCgEIlAF2aC4Oc8vb7Ng5+gDZF1yIi1odDRAKwXUJDcdNB597+xJpDfLDoP+yBoda4rc+KoIZb0Q31uZsae6gvtq58hLeBEKbQW4xriItT+WDEVU/INqEzEQEmjJyQ21m+/7XBUZ5PQUZZEpxI9W7zG+Cx7I6SPAAD+VWqGsBsqErRdXDm8Gvse59ySPXfteoEJzcOqI7SbI0Ztd2aRVuu6SurQMbnBoTrpSEwzmvbwGro6t2uU6FoxhriXuba5ibCJ/7BXw/+KKxUc188Y+ZnntV5CK+rSmDTufnEUpvNY+na2TbiqsVfX/y84Phd2HmqAv0CrsyP8y7mbSQ5G3VQJ/UDs001dGvJ0fql1wvXHcI07yczMuROpzJvu/PJCIls/f10ozqf6P6xEmReUpRu3XDGy/3WAv/ogHMAfT7oLxjJrJhcoFNbiXV6nquBts2eg7ayrnIeWeTchce2+qYzgQu1cTQD8S/uHtv/+KivYnQkvNQwhEBZKsBrgTrRZnJsDlqHc61PQPPnZCzz2fiefCDM9aTmQ2PZXv3GlwaWz5kNkmlIuueA85V/7948rVs4YpOj0uabA0fIkacE7QaLs8rfM8/9Tsv4plyZJkK7b9cYzI/YCrPF6c1bpNkpSx/WneJOp+jAux82DayspvTomWBabRegRLOCo8lgt3RCYlTuQvD/MzlpjPl24fcgRxv+bT2E6mK3MqHyWybN4xomH87jWNzzbHqmqNs1dZCHSDgExz597lPRk+MOruIvrdfh+hSNvs69p26bXLwgq9UHPgZz7ezKhcQaj846Ch/2d5zys1O5OLWIOta3rZjjuWCceNgeIpTUBaPio4B7/FLy0fucz2x+Q4f5OuDVX5h4CNevsMs0uct2+5KPjclCMIvZUZ014soSUMgQhK0TGwUbdDp//fcNS8syj2a1GIMw43qQP8ksCP/axo389smUUnZOULMUR77P1PazScjYHe0bsxlHSKnL/o2//8at/+Mo//8XTIu/etIXKoAAA 2x"
+              />
+              <source
+                media="(max-width: 1279px)"
+                srcset="data:image/webp;base64,UklGRqIDAABXRUJQVlA4WAoAAAAQAAAAQQAAQQAAQUxQSDIBAAABkFVbb91oHwQzsBmkDDoMPAwyTApBEAQhUAxBEARBD7k5+ua/PEbEBGB+XWUbFhFhY5O+IPtbPG6b9kTt4zHZtOZoGo9qfa5IPK71oe6R0NYnikRSKdPaiLRWJy0Wia1OWTxS+zKheST35VazSG/1RrEgHOWaBKVcWoO0X2jG4uVMg1ZOWhDXI2XSgxbUdadcn51xOYAe5G9A2QQwNscr6GvnW4VPNr5t8A3js/hvaHw2+MbGtwmf/PD1xveCsxkgbAq82ToA5zIA+HDprnHVHZRJcdiY6hGER3FanMXqGTrLiqvCIbhcBoOVa2iWzyruLp7NK+4vnssXzGyWyRbMbZZnVMwukkUKHlwtg3c82/Q5KXi86TNakbKpzfJPRd5vtXsuX8j++pZt2M7GJj8N8wFWUDggSgIAABANAJ0BKkIAQgA+kTqYR6WjJSEs1m3YsBIJYwDCAFmIyKyM/60OeeqUY1J0yPME7VcrOXYG1c9YNN0OKoiQ+j7/85vpp5yZtwdKafIG1lUV4DqJmGt+MV6SbaA/BYg4P4sO272gjmLCT7ujEBU71xfwAP7+zWtDmLdVB/jNNO+AKIxq5q29drBkQ1U1BZlELdNYnTMW+cBVxPRbJj5T1G6/v43kKlNeTsZtCqPnuKe/fdLTGq7++zm+sl9UBNC/4hFukRhfOhlrV/oRyw3Zh4iftxkCmSOBf799OTRx/+Jjrsq3kmmr6XyvDqIs9XA/R6AVSiPCALYYkIWlMfIpo8J5GUoCQsf9jVh4Hvr5AcdLbJaafQDgumWXGTubtt/s6QGos0gzuKajcjy8AWazuv2gYtuiysqx3RAbzP9xG9e4okIVEZ9XbrPSC0XrZEjZ441lg8WJZ/HvZnw/dtW9ewnFccPPVj3OtHFEeuOhOD31Pz4/dOJrl890lI6UC8oi/UO1I1Qy7yxInEN/Nqd9+FP4ECBCTVq+M4q/8dr4iZrW+KXRBF5bxlrRsPlbyTVViKzxktBBnAZgzvXwaJ7IfneKtZSI//7Knf1y0ytA0/mGqQbIig4PIlqgPhQ1SzmWmuG/HLObqEenb1NzdbY0M+KufIctuIGqQiqkxsyEoBHJietZzk4VIuxzpu9uv2cUiscX3PYiN0TaKSKGqiSdXJLzQpb1lkzNZ5DqqLBhUWf/ZvQQn/2WDwP/9FgpOXWIcUZ//6HCdh81UAA= 1x, data:image/webp;base64,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 2x"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="data:image/webp;base64,UklGRtQCAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOQAAAABgBDZbt3qQhADmUnKxGUQCIEgCIYQCIYgCIJgCHpfx74lEBETgIVazWNkZnSriv1yRT4M0z1Hz6VN15U7lzdddI7cGHWJ5WZ7Jp7bXR6IJ6HLnCelT1mS2kRN2vOfEjxD/2pJfP9Rkvr41bg6gJLkAhjbBQRboCS9Vr5qfNb5PPgi+ccHfOT4gOAL5+vGZ2++WvgUwRbAxWaAsCmAztUA4ODSX7iZGv4sgyf0L5w8Ff8bi2HWORzT4gwucxDf54LHtsuwssaOcWJtaetuxfLS1vQXthaLJ3EJ9pdqPTJzhNu7YCFWUDggygEAAJAJAJ0BKjIAMgA+kTyXSCWjoiEuFJ1QsBIJYwC9TBdQwXOFSN7uqmQQ+jwNyJkPzX4be6Q2eHFrVOvCcxeXVuyxuLyo8n1D847EXpfBR6ta7j8eCWgA/gyi5KF/2TXSJNXVEogng01+WnYZxiej3rrllrCCW73HnBSzxvEKvOWjoDVX36mjaviwmWvecLU+JYtt6w9GKkPoKgxV3ln+NA1vHcnxeHtUTKduA+rAv//jQeEGHwBvzDmJS39vyEm8uEQyTgbHaUDPU8eDt3hTu2PBHq4Egrac2Vk5d52GV9tHJ2HplJzRXF/xZkvjgKlVQxRXxP63+2pcYkPiMW3MUy6LqxdC84nERAsdo7iMQYzlvduPVhF7lv4rWTOcb1knYP7EQPg00T+ds4xXilA1JJVXlePToRBeStxiE0MFEhTXBT/CRRyPoblbC/am4vvUIlk0QPG79l6b0XZpotGibOwABANNVJNApB+8k6r36dNxsm9l9iGP5RsNtgALqDgWWD9osb9UC6UelUKkHlYprRkt0/Nos5J097CiAX/69S///OMGeYnGB2mddrIDOD+DX//3icVSX3mtPEirHf9Ff//5lvmXSLdBwAAA 1x, data:image/webp;base64,UklGRu4FAABXRUJQVlA4WAoAAAAQAAAAYwAAYwAAQUxQSN0BAAABkFXbVt5qWwIOwAF1kDq410EkIKESjgQkRAISIuFIOBLOQ9I2gc338xYRE4Buw0+RbVdzdzdtTcoSQDWWqn6pbmsmsYj6rVqX4cJr9w51jSNlMe+1xlFS865rHCGId19jd8V8QF37Ss0HbbGjYj6slV6C+NDSR9p9cI0dJPXhNd6WzQlavimbU7R8SzYnafmGZE7T4mVJnajGq9Sp7uEacbJySXG65YJkfCx+15xw+2p1yuWLpJwsfFadtHyUnHb8pPJqHyQnnt9VZvImOXMLZys1f50pt/1kcfLLobKTg7JTAA+nH4GVXwE2fhVQforgEwzLDH7KDIrMQNoMtinsOgO1GZj/d7QZmM5A9xm0bQoyAykzKD8zeIYZBCg/BSq/DSj8ViDxewBQdgoAwq4eFnbPA3ZuitMXt/UsGLV4BmFW8fbBLL5D41XxYeIVP4Gwqvg4GCeNn6FwWvFtY9TwdTI+Fr9D4VNwpbARXBp2LoqLkzLReBWS8bCI67OxsIw7s3GwjHuzMbCMu5OOpxH3Jx1tj+hSxpKATouNYwX9pjZKi+h61RGsoPdU+5OAAVPtq0UMmmo3Jg8MnFbtYX8FjP6seo/KExwf66bXaC0JVMOzSGtqB9N9k/Ib0C0AVlA4IOoDAAAwFwCdASpkAGQAPo04l0elIyIlMvcqaKARiWUDGAP0AP9Q9/a9NO4AWMQ36lD1xFuRVRN3C+mIdMXmuRtVAjW032+uIteUzGiTmHLHCzPaYUByQs/GDWT5JfIxz9/Yd5tBAKsnATs/6ctBVuVLQYP4mhL4vV/+ibOD9BKTxMhcqtSMVtSl//42bnRuWjkhZqEhmLPHlNxukhC9dRzG3WsATVKmOMZsIMUnrVmuIP9KRWyOM45hCzokBClfYoNL44x4AAD++kxy3f/5T5//yThY6KzFRPeZ6oCoxjEQZ6koA368DleqtHO/h8mmw6qYxyDEuqffZPdgup+Fa9WqwrJpag3aiePxUGdEWQ14OHkz4iTF/O13AbIlk6VpANd/xshJM3cmZzN+wFoeQSiQVn2DnMVBK3fUTtGMbVkAeD0B2xEw4avFFM8yTa9/UVdyUVdth2CYbnJa8SXa5TtRl5BeLao1EN5jxu5gfXVarFfHlaWn68bBeS6gDiqnW5i1Rz0xFGY5h4M4/cc+M9riyPeQzw0nwjgoMV6BnTcVTcf7Mq1y5etQtRWfDLo4Xsk1bwNTC0DjGu+twxzqNxiLfTbB3do3iSEz0cuRAHnvJWKA9GEoGYeSgpbPIC/RJOle/yeP/B7vczLlub78sIV40lVebO0I8TocphcQv09olL+E5nNNwfJwYyy3TkipXeXZ+DbMcWu342TMMOaAw/dvL+v7A95BlfK4B9a5WJBD3NSejHaz33ejK8797BBWVZeYSW0NfKcLIajwgJwn0Vwcu+8IW4DlEfjYqGp2lOg78+T8roQloI6V2IuZqxazW0sWg2BffRrJD562SH9cQEPaeqVBKo5P5pOk+JHB8evrcHkWzK/7h89l9Pjn5KTJTw1DTvEY8BWlw910YFDGJzjZuSFTXZTDqdxZBYl5JY1BWLLv2Sza8RbZIaZH7pumg6vgE7ctpbyuFBTY5V3dT9DpzIrwWjIQDksWGPMMiX+vyE2MIEEpvTrkYb6ysXMKxcATPrw51PQelRCMEGh/YUvdFWE2YRafkopEoxbLNVJNVpwu/bzU/qOgP56PXhFu7WoS5+6c9GpBKv+R/fh3//8APDGTi4+i2r/9hDxF7MUTY1ukGdP1E+RLuDPDJz25iX86/9Wb0m9kmGA5vNXZdAUmXwrHchsdQ/6MG5+FtKzQ2eNqe0vrd1urMp/aoEPDpseTEZ2OpsNKOcvLUZM/dKTcfUXVBGkKfL6XofV7TJ5mf8QB/lQcA5lQSCiUFg7Sf9/bK5AOV8A5QGTJ9B1b6es0V5Z7plh26FlVi3MhqSWf4v+cT5FOmby+KOgAAAA= 2x"
+              />
+              <img
+                src="data:image/webp;base64,UklGRjICAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSL0AAAABgFDbTl3pSoiD1gl1UglIQEIkIAEJlYCESIiEvN/wuWsERMQEYDLlZh7hvZWE9VI8hq0ea0RjYT0WZI+ldk9pLNcxeWJjl5EeW58Bjc36xx3b84/T9rl81SBUAGdQClA5CmAcjhSkqbDkxtI6izmLx7/rLG4svbG0zFISywXnMKBwVEA4DgDKUAFAfJ8dX8j7bvzWXYq/nz0dg9J3PDIC6DrF7G1rPGP+rCtUsPSsNuZFsP4qrXuEW8sXJgEAVlA4IE4BAABwBwCdASooACgAPok0lUelIqIhNVgKqKARCUAXoCzPZIz5TQBcq9+7P3MJvlpgOtLPHEM+OueD6yqJ08sIqLtLQthnHAD52Ifzac1LUnpiFj/gXs7Hr6OhORqG5FkwNr+hSkWEyVRQdlDfReGKCfCGUVKzgHhibpZbT+uvuHip6z3t7p3AQgKW9SSdKFOicsfD+03ARkDwyc0D9OWnBgrD/1gPw5xgxDFXbFvuKYSKUkykevbeb9rmB9yG60owa+FZ6rEJ0OmF0iLHRnpZQOMrDaPs402Dg5uxtGgMNz+3acY1Khx+lmIwOicjHLczSDlyaC8UK3872fj4hY6ipTkcmYVqctqwStvgs3xD5G6xsENvB6ZikO8uqP6TWU0bOypKj/CzVLEpevXwnLDHZXADGpK3eIaiScGB4vGDzB3OVz/i/wEdA3qe3E9v4AAA"
+                alt="a man"
+                class="hero-icon-img"
+                width="40"
+                height="40"
+              />
+            </picture>
+          </li>
+          <li class="hero-list-item hero-position-three">
+            <picture class="hero-icon-media">
+              <source
+                media="(max-width: 767px)"
+                srcset="data:image/webp;base64,UklGRpYCAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSL0AAAABgFDbTl3pSoiD1gl1UglIQEIkIAEJlYCESIiEvN/wuWsERMQEYDLlZh7hvZWE9VI8hq0ea0RjYT0WZI+ldk9pLNcxeWJjl5EeW58Bjc36xx3b84/T9rl81SBUAGdQClA5CmAcjhSkqbDkxtI6izmLx7/rLG4svbG0zFISywXnMKBwVEA4DgDKUAFAfJ8dX8j7bvzWXYq/nz0dg9J3PDIC6DrF7G1rPGP+rCtUsPSsNuZFsP4qrXuEW8sXJgEAVlA4ILIBAACwCACdASooACgAPoU4lkelI6IhMdZt+KAQiUAVJO6wYlwBl05nfkNaAPri19S1MycUavlPbGuX/1eCl3A/yNhP8q05lVBVzX+CswnsjAAA/u/DkiQFwOhwAwXLfLGXxNmHSNlZhtdiN/Pgs84VICLT2T7hHcEju95vx56kXl7VRkRrem6bgirpfgaQabTF3gHYgXzs2Ri0W4fgv2rcu+UVevLoR3cGSuwLieeQ2wDISi07Hy0OdNZfkoSvLICiNNjx/CFuX9sm7wDM2wdCDbT8MdsGzyL9nNPO93F0v+afyXTQIeiUbsZM/YspHCDgFJ4DiU0POYb4dwZYbWe0sIFhOpEsSxMFAE9vOCqQ271JC9QMZNSwAL99EbVGhV+uPs5yaDMtVt6Bg/H13nWTwj6TZiK1FZ8PgPVEeJJ1bzg+FiSeZAsGTVhS1y8YpPwwvAhabiWFMwPSt43UilAddMnpIUtSyXsd7vj0ilw4uznFxBken38XjMDRAYPEP3fTKyLqyMrs7SIObhU+feehOA46pty2rFxtPdVD5Z+J758+4epvi/wU+Nl4TJwYQs9OmQAAAA== 1x, data:image/webp;base64,UklGRiYFAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSHwBAAABkFXbVhxBV8JzAE5SDigHSIgEJCABCZGABCRcCU/C66EGAq+Hz4iYANwt6WydNDPT0Vs5BBtLqrSJbEn2OC61+S0tJ0XtZuawkhS1BVnWybRFmdeI3Ra+wgKn2tKa75Jqy9d74rANR7gh0rZkmBZpmzJMirRtGaZE2sYMM4ZtPeS7apvXr7Jtf34RdT8Nn13mYP8om4v5E/pAeVfMyfIm0guVV9ncLK/oh75I5ujxW/PkAiDmqQqQXLEENF8qQF8IMWfl8CYVb87mTeve9OEN1R3770tv1J3RvenNm3Z6U5I3D/FGQF8IVF8akHxJgKgrAuDypAHA4Un6DeoH8bL4kV+JesHwCsWLgrdCH4gPsw/5E3QPLnwcdT8Nn+HcL+PbulvF1zL2GpgYuRPDDETuw4C5kbswYHbkHgyYH8cOI+DWul4V3Jx1LT1xf7xW6gFLZq7CjGULV9AiWDhm3qVFsPqz3aDXA1vKs3EG61OwsTxK60N/I3s7n4K7AVZQOCCEAwAAsBIAnQEqUABQAD59NJBHpKMhoTwVGqiQD4lAGATFa8rBO8hHE26PPJeei1Im0mWZETtJIG1BMqsH0iERCr7sZrQrbDVr36sRkdjDusXEyXwUw157DTKIc2boGnkCHkkNHaKW5ntiypxB7a+J5z3DbovBvfwkbI7neAp0zr6CX2FA8NrcXVuPCotAQGDIn474PMLHOlrMfnCUzI5LHAAA/vev//7Hj/+xkv/+wWqPmJr6dZrf9RHWYuqHeFABrtQzbsmk2fNp3pBAxPe8tP6lhtLeCXmaQFygAZMCetRmoG6VEFvDExeJjnNDI6tOEQgJ/vH7H7yM9Wo3CNdMHTmkJ8WWk4fR2rxY4HTZFgptGkzyPyYwD1RAdoW29f/n1LvUjuN4+5iP/Dp81K6S76hhhhZNm6/11NhbqiYmfiU2xwwcImjQsiXtwZJeURkpR70/0rFuPZlJ5noJ4aMuQKgyAGhRO+w4hO1GMpk+cVTWp+/R5/8CGQxNzVmFMGu0UK1OB0gkeymFmy3Mem8apAty+n/ml/K69GN45uyfOt6vJikdI9T4iqUnHRYljwfLuhp/wSm0ahGffudFKSc9qpulREwqsFGa/HwFe8yIBi+GnVJZC4NTAsST01AG76TgE0l3dQ8oTOFlva/nJhO64jobHdq/upd15OrKzGB+1Ok7/88df/DWKLFRdSUYNkhVlCctF1CgdBRU5ySsmNJcCF0oTq6z2hM48snBhwiyFqLYDePbINIvRKKTtOnmsZg+wPhpmpvpfT5LNwNb0m8o2LHLpUlMUmcxi5HFz/HgBVkTecRO0RqmzmrV8rz2hcxbBINjTy3pG+AwjugQnDLqp5/vhXgUuCp2GWd/wfdOxXmOq1A3ToY84K7NzfYAOnlI0oGPTwN1kRw+DPxb5rar/Mspy4zwUH5JeOa5BUt6rq0znzbv0MbzSwKgf2vKR9whvBmsmXgg8V8hwOcwrDFiX/GhEYpezy/NNLD0iGqCqw6TkD4d00SjHRKdCP9kX0PU6Hcl8oseq5O7mVqFoDrTPoOTgf8r3ejAfjFsHSCYL3wSaZSkZWF4MnCj/XuFBvIxpYhbR6VaapaInj46x1j2CgcyNVXX1nknp4IQrDnzDrd7rhrV5ONRHVK2/fntB6lrpwnu7Ke/daQoBS6dks8pJModWWG1TJpZEML/5cep22nyGkxTAAAA 2x"
+              />
+              <source
+                media="(max-width: 1279px)"
+                srcset="data:image/webp;base64,UklGRkgEAABXRUJQVlA4WAoAAAAQAAAAQQAAQQAAQUxQSDIBAAABkFVbb91oHwQzsBmkDDoMPAwyTApBEAQhUAxBEARBD7k5+ua/PEbEBGB+XWUbFhFhY5O+IPtbPG6b9kTt4zHZtOZoGo9qfa5IPK71oe6R0NYnikRSKdPaiLRWJy0Wia1OWTxS+zKheST35VazSG/1RrEgHOWaBKVcWoO0X2jG4uVMg1ZOWhDXI2XSgxbUdadcn51xOYAe5G9A2QQwNscr6GvnW4VPNr5t8A3js/hvaHw2+MbGtwmf/PD1xveCsxkgbAq82ToA5zIA+HDprnHVHZRJcdiY6hGER3FanMXqGTrLiqvCIbhcBoOVa2iWzyruLp7NK+4vnssXzGyWyRbMbZZnVMwukkUKHlwtg3c82/Q5KXi86TNakbKpzfJPRd5vtXsuX8j++pZt2M7GJj8N8wFWUDgg8AIAALAOAJ0BKkIAQgA+jTyXR6U/oiEwtitT8BGJQBftkBpeHAfA2+nPIMag4rft6X1o0y1U0JY16kkE7i490+p59T87BN+OU2+KRACyxb/hv9Cnu6BrVxKA9nWRSIVZvpmU78/mw++qmqJh8fLKNTMA0LxQNl8dBVppl+uO83pIAAD9///6Uf/9Vif/9IDUbtgwu08NIuRC18V3UueFzXzOdQ6iVll9DEfxWyrXuEYtCM7j+MkxQT8QxAzJRbNsAI0D9pqHJfMW+YIgyMOgkJFdEsIORUKxCgpuAoY7R3MWA2xQ7eoRBQ0u44SlfVf8TSZ7zBnS4Vj6Det+q2v/JerviciamaXojfRDxP8flKziZiYBxlWQfNhS5in4aj0DU3uAsr/925a4pCXbM1Xo6RK4ip82fiwxgqIye+tYa2wfeUVQkHJd2pyMd5AZ/8jRemkUlQe5Mrqh++/b+wisTS8Oe74/BE26IJt0ISFRX34MbmzFn2xc4yilitn2KciVOOY838TJYo96YQNnZf1BiSdKX3BXnzclOIvBYRRdrkCsh8gTO21KdDXUGKhL213wKoZ4VvBLBmI2FfiSaIFOP+rMjeXx2AtqBQwg/hokCvlOfjXl54vTYrY+Q/jrt1P3wEoRSmqNXgXFKwJI3prqVPRUlxBA+XU34Q0qtQ6nI4Igh9phs2Y2i6aRJtVhbV0+Rlvtra0cXS7z8QYN9pl+3BNXdBqrkw0iBMRIgdrscW0IhX8jWUAxKPWkwOPYX+ZQXzOLylUID63+9tKCS4cWUkDNI4i/BaJrBVEZtVPugUjVESw8tuh+KdwEXAPIxxD2ImAukxsTIeHLco9FKAYChEbM0lVLptxWU5jPB3GD5fCanrVt4QNp+cdyeR6HPmupa20U4nV1PjK3yiWne15VoLhO/fvy8re2F3qTzq5LSfC0fuO00+p7/P6gKX8BwnTNvcdPJzpSweohQN93wI2/GKyVZp5AABDWyh3f3L+vlOcg43IA 1x, data:image/webp;base64,UklGRoAJAABXRUJQVlA4WAoAAAAQAAAAgwAAgwAAQUxQSG8CAAABkFVrb91YPwQxsBlMGXQYZBj4MAgEQzAEQzAEQzAEQRAEPfSW2FLO7SUiJgCrhm0vrTPrU+beyr59wc+w16GHj5q+7KNURU/nloJhtHedtqdg073r5G0zh7LogpyCJZRFF5UarKAsunINJmTRxTmvd2c1kNNa1NTIGhbaRM3ktAoVNbXQEpHVWA4LJFFzJU2X1eQ8WVWjy0zU1exG09BQwwdNQkNNHzQFDTV+0AxNze8TFHWwnpbVxXxSUifTKVG8kHACsbrJdFxRR8thSV3dDorsi9AxVZ1thyR1934E+8MHZHU4fxTZI6FPqrqcP4jqs9B71SnNb0XxSuidpG7nd9gveWNTx++vmmf9RVTX6VnybX/WfetPojpPD8m79NC8qw/snQC4qfsBSP7tQPWvAsO/AegFxO0KhO0KbPsV2MsVKO0KtH4FOl8Bvgb63yJfAb4G/Qr0dgVauQJlvwL7dgW2eAVuuALA8G8A1b8K7P4lIPp3AyDeMQBU79rDL+/SA3kXHtB963i6+5aekW/hGbpnDS/vnm2vIH4x3sx+pXdIvJLwDrJXFW+TOBXeQ/ap4kMSjzh8guxRxufsD+PAuz/pCDRvKg4l8YXDMdh8STi6eFJwOLEfTMchihcScGbyIuHc7EPG2dWDgvO7fQ0T0rBu0AygYdsgzEnDskGYlZpdnTBxsapi7mxTxuxJ7JGE+SNbwwErUrGlEBZNbIdsWDdWKxph6cQW8DeWz7yaZFgY61KSCUbGKqtIJhgaE68gmWDtT5utf8PkmPo8fSfYHVPj86T+Iph/S3UcN+oe4eftZy+tMz9j7q3sPxGrAgBWUDgg6gYAANAkAJ0BKoQAhAA+kTyXR6WjoiExdjqYsBIJYy+ApB3/rpPd3Z+0gP1A/kEEAQXSA9d6UnSQJ51LcBc67ZP0/ubPN9u22aFD45Qa0Aef8CNdyDDRMQ/JT1n8/pWGgiRDh3BYj8V+GffueQz6/1GOTxpUqzpDhlx5x14E81hPv3H68X74b1Yf9cZF73EOiGuWdmJUwV9eS+rTUw/xjTcFFEE/0UA0rIuOizRcCbs0YOr9dO5C8exkfGiyJSYojkfdpG31QGFop2HZY8iuKCoLRMv8M+WQT/uQf5vAmHOVOncJkUI4uIC3h7i2qnoNsYJCau7Gt3eg6h/g3mL4IJQlP/Nw5PWK7PJj4uSEUSd4gstn2VMOh+qvE0FyD0qHNFqDMrDqY3SHtf2SLyBzddKYAAD+/K1Zjfv//2XJReaPKHsLCnh2NdxRM7g41ECIzSU91BwIee4THXry/G9CZnHCZSBhem244uf3fcoQzU/v2nXHPp/9q1q6MfexTkPhbgR7WoMkFnBPuMPjOgJf+/AJFS8lnK8csv93fyoq8P/at2z8YzNEOWkElUcr3DPTS1a9bHC4qWvNws1Dzfx755DKbmm3HdGTSEwpJh7/9kNY5qCYlh184snLakS93TaW48WYF31Mco0+5ds/oojrmxdXYy/TFnN+Y6NP49C6RwBnoCy5AIc0AOq/E4JiDWXjKwkJgUt657XzV/n5LA1XwS79hWyL5wgUGgNda6g3ZjIo5wwUwCNnImVUFgWReEl0OG5eJXxjDVPOAKkIVmfzIR+xxZSWE0KxqGFSuXLcamtOg5Xp+vzFLn4YFA8fncwIvYL9P6khS5Ou1lRsECoDnyt1N/H3hkmMEMvePk5Fh9g5LLWiUx107Fz4KDlIIU5jVqGqrUe4i/vHiNvoxL9dAf5POAOPu60bBU49sHvAcYh29PELKrWZ2h7sBWiFwQ1RH1M5sfSqyjt5mFe8gdg266QbTRkfUvr8owgPfyw/Wb6K+i2No1IWTfQ8ArVuqGRXw6wDywK+ptWFqHK2l6AiZFAfuuQSkCBxV1ddeTJ9rdEtKGU5lhGFpWb7aMbuH+YehJLnGP/vNTIm7e+/BHJsFUoRyKExvSBiMOn//uuu4Y9GWp4w99AYBed961RLFs8ty61zO4ZoRuu6bgAZ5zXVR72yVXD5p546pYClfhNKu4/uMzzkiNseV4AKZrZQbO1iYauqb3c0s3/83wZLULKxcvlgFReFregmDYuFBY7rd7FjiHKL3TJqUgCvpQGQcfMRGg1QJ/OUazTe22ToJGHB5fnyfilifPJX/oALGgl4NmxsfNjlWBiXaMgDYEEtTzorTmp1aTH/kI6Ru/IGx2QMHpxopzy0GBJdhMag8nKcjEGXA/Rql6TdOOiupT9XzD99uCUA/E6agdHhe5bQRZf59Md3JPQBPUhcweHWBR7C1SOIff9Ni41x/SZcOJhTj5AJd4zaDS0l+5PSQmBsZiP5841boVuw7uZtaAA5DVdfyVToEtwZuWnD1g5YNuosNqKr6LYbXc8D1gcupfsPuTBeaK0ihqnOD/O4jgJwXn6wJXWXw7/mkfuxAJpXaBPssnkyAfztYnXkCzO6PUKoU22xbLPamWEUApI+2XCuJynEdh3rHpCdR/3vebbinyIcZYE12Z1qVnqnDvdnHTnsYdD0ocMcRJQLWh4YCgXYZs3wQGQY3nxLcT5e8kVUy2lGuoVkisyd3o5cfujgXIBKjMnk5DNoI9ePiGNnLIXgzU7Ofd/9HvazAD43J1V9gQzjRJ16FCPP6G63MFRrg2Wnv1vfPd3ZRBTp6QBglFWVPb3xVmsrjWb8pfIZzZaFIpeHGBhhKHs78IpJ2unq4HQ1vBS8B8EeRf6sdwrGU4nWPGcTp6EBvdD5d8dkQuj7aXzFnPiRgssHAg/vzEtjLRFLU7K7qHHbbgAWgQC4zul+J4TibJLLIAcbHeRv/8EWWtDuw7dfAXNmxd5EXvhwGS71uxOn4EwdbLAIq/pnUxNVQBLK7vbLUC/3PTAu0x7SAPPbcGc1gfCPfVc0Os/6tmYjrZQuRCN4zzi0UEgchqUxOWCcBJE56UGVMrsQOk9IIrKvlZeQHmsvqESheOxHRLO4UU44XUJG+jZuhfwxq6NGNaMoM2CL4AbVo/7IOa6VqrXSHKFHEC6PfAkeGjMSkPAjZHrZMiAIkBgs7+3zT27ZgCmYAkipsgovH/4E//8Hi3AuPTh77a91vbcd8YxD2fWHkmw+ir/+0gccm6VCB//+uhLr8aeWNO97V82JDcbhWrTo6655CVyF64gSHgAQcpV19PUVNaUWcLYMch4tdBjZnN17VubR4u6uf9Uz9wvSwAAAAA== 2x"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="data:image/webp;base64,UklGRjgDAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOQAAAABgBDZbt3qQhADmUnKxGUQCIEgCIYQCIYgCIJgCHpfx74lEBETgIVazWNkZnSriv1yRT4M0z1Hz6VN15U7lzdddI7cGHWJ5WZ7Jp7bXR6IJ6HLnCelT1mS2kRN2vOfEjxD/2pJfP9Rkvr41bg6gJLkAhjbBQRboCS9Vr5qfNb5PPgi+ccHfOT4gOAL5+vGZ2++WvgUwRbAxWaAsCmAztUA4ODSX7iZGv4sgyf0L5w8Ff8bi2HWORzT4gwucxDf54LHtsuwssaOcWJtaetuxfLS1vQXthaLJ3EJ9pdqPTJzhNu7YCFWUDggLgIAAHAKAJ0BKjIAMgA+jTiXR6UjIiEwGAz4oBGJQBh0jSHZF84rZZQPQz8SfvttSz9pP5Z4dfc3Nkm3/jyLDE1cgEn3qnTnIMwXMeJyu9m8McTe+1Gw358szwLHGAH4AP7nKT+fDLRvVV9w3zW+EifB8dJm+06ul2qIBVWe5ig+XUgFMHCzxpmtBdIhomfQ6fMFaUNQap2ofZAJJGjj7X244H2WWAx+g+H1WWGM863nR3cuSlPt+n7BmwBcwA4+ZCHKGoJlLcHgwjnqs5Pdu1LTwgzb8eOJ4L2JtzzSk///OTnQ8o8W4YdFRnUn86Oka/WyopqRsFH1MgAZ7/uG51gbPxDkZ2+zgfMmX22EFWI+zotVw0+E1HPL35UMWpLW563NVm68Mb2hVEhQdhuw0+NMt0Z/88oVWRq9hWxn7bZslibQmETWoVHMRjOzjjKv5eQFoNaFz5jlKqnB426tAdE2HInPhtZJ9DfKX5lJYxPFwWmJpl3pV/oxJpg5LYdn7aVXrUIuEthNac18gB2F1hTplv7cMBKf0/Ui9qJOOhhTTEdJgD5ryuTUNV+g+KA/f6lUZKNoXHO3bPKH9YKl7A5KjIEQWYLzE2WsjCEmVegVN93FZEzciTPi8gfTM6TrUgmY2cSp7SNkHEeEh69j+upqIVJyOTwR/ZJf//9DtbGuzczpqT+mmpLQvNn//mgyOu746z4Hy+PvqsszKQ6nVIpVwrf0P//tZF2a0BRgAAAAAA== 1x, data:image/webp;base64,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 2x"
+              />
+              <img
+                src="data:image/webp;base64,UklGRpYCAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSL0AAAABgFDbTl3pSoiD1gl1UglIQEIkIAEJlYCESIiEvN/wuWsERMQEYDLlZh7hvZWE9VI8hq0ea0RjYT0WZI+ldk9pLNcxeWJjl5EeW58Bjc36xx3b84/T9rl81SBUAGdQClA5CmAcjhSkqbDkxtI6izmLx7/rLG4svbG0zFISywXnMKBwVEA4DgDKUAFAfJ8dX8j7bvzWXYq/nz0dg9J3PDIC6DrF7G1rPGP+rCtUsPSsNuZFsP4qrXuEW8sXJgEAVlA4ILIBAACwCACdASooACgAPoU4lkelI6IhMdZt+KAQiUAVJO6wYlwBl05nfkNaAPri19S1MycUavlPbGuX/1eCl3A/yNhP8q05lVBVzX+CswnsjAAA/u/DkiQFwOhwAwXLfLGXxNmHSNlZhtdiN/Pgs84VICLT2T7hHcEju95vx56kXl7VRkRrem6bgirpfgaQabTF3gHYgXzs2Ri0W4fgv2rcu+UVevLoR3cGSuwLieeQ2wDISi07Hy0OdNZfkoSvLICiNNjx/CFuX9sm7wDM2wdCDbT8MdsGzyL9nNPO93F0v+afyXTQIeiUbsZM/YspHCDgFJ4DiU0POYb4dwZYbWe0sIFhOpEsSxMFAE9vOCqQ271JC9QMZNSwAL99EbVGhV+uPs5yaDMtVt6Bg/H13nWTwj6TZiK1FZ8PgPVEeJJ1bzg+FiSeZAsGTVhS1y8YpPwwvAhabiWFMwPSt43UilAddMnpIUtSyXsd7vj0ilw4uznFxBken38XjMDRAYPEP3fTKyLqyMrs7SIObhU+feehOA46pty2rFxtPdVD5Z+J758+4epvi/wU+Nl4TJwYQs9OmQAAAA=="
+                alt="a sec woman"
+                class="hero-icon-img"
+                width="40"
+                height="40"
+              />
+            </picture>
+          </li>
+          <li class="hero-list-item hero-position-four">
+            <div class="hero-item-wrapper">
+              <p class="hero-item-text">2K</p>
+              <p class="hero-item-span">reviews</p>
+            </div>
+          </li>
+        </ul>
+
+        <h1 class="hero-title">
+          organic <span class="hero-span">vegetables</span> to your diet today!
+        </h1>
+
+        <p class="hero-descr">
+          Our expertly curated vegetable baskets are made with the freshest,
+          highest quality vegetables available. Fresh Harvest Box has got you
+          covered. Fresh, high-quality vegetables in expertly curated vegetable
+          baskets delivered to you.
+        </p>
+
+        <button class="hero-btn data-modal-open" type="button" title="shop now">
+          Shop now
+        </button>
+      </div>
+
+      <div class="hero-image">
+        <picture class="hero-picture">
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-woman-07343b98.webp 1x, /91_html-css_onix7l/assets/mob-woman@2x-162c9aea.webp 2x"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/91_html-css_onix7l/assets/tab-woman-a09445e4.webp 1x, /91_html-css_onix7l/assets/tab-woman@2x-cde874b1.webp 2x"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-woman-9b678d03.webp 1x, /91_html-css_onix7l/assets/desk-woman@2x-b275e41d.webp 2x"
+          />
+          <img
+            class="hero-photo"
+            src="/91_html-css_onix7l/assets/mob-woman-07343b98.webp"
+            alt="image9620"
+            width="278"
+            height="228"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <ul class="hero-nav-list">
+        <li class="hero-nav-item hero-nav-active">
+          <a class="hero-nav-link hero-nav-active" href="">#organic</a>
+        </li>
+        <li class="hero-nav-item">
+          <a class="hero-nav-link" href="">#products</a>
+        </li>
+        <li class="hero-nav-item">
+          <a class="hero-nav-link" href="">#basket</a>
+        </li>
+        <li class="hero-nav-item">
+          <a class="hero-nav-link" href="">#vegetables</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <!-- Halyna -->
+    <section class="order" id="order">
+  <div class="container order-container-main">
+    <div class="order-container">
+      <h2 class="order-title">
+        To order your vegetable basket, simply follow these easy steps
+      </h2>
+      <picture class="order-picture-broccoli">
+        <source media="(max-width: 767px)" srcset="/91_html-css_onix7l/assets/mob-vegetables-332509fe.webp 1x, /91_html-css_onix7l/assets/mob-vegetables@2x-adb8d8ef.webp 2x" type="image/webp" />
+        <source media="(max-width: 767px)" srcset="/91_html-css_onix7l/assets/mob-vegetables-05cb7889.jpg 1x, /91_html-css_onix7l/assets/mob-vegetables@2x-8be2ad4b.jpg 2x" type="image/jpg" />
+
+        <source media="(max-width: 1279px)" srcset="/91_html-css_onix7l/assets/tab-vegetables-bb409a5c.webp 1x, /91_html-css_onix7l/assets/tab-vegetables@2x-d9bebcd1.webp 2x" type="image/webp" />
+        <source media="(max-width: 1279px)" srcset="/91_html-css_onix7l/assets/tab-vegetables-421c6c82.jpg 1x, /91_html-css_onix7l/assets/tab-vegetables@2x-a16d09fc.jpg 2x" type="image/jpg" />
+
+        <source media="(min-width: 1280px)" srcset="/91_html-css_onix7l/assets/desk-vegetables-34fe8ab1.webp 1x, /91_html-css_onix7l/assets/desk-vegetables@2x-66d008fd.webp 2x" type="image/webp" />
+        <source media="(min-width: 1280px)" srcset="/91_html-css_onix7l/assets/desk-vegetables-e46ba3ce.jpg 1x, /91_html-css_onix7l/assets/desk-vegetables@2x-351119a7.jpg 2x" type="image/jpg" />
+
+        <img class="order-img" src="/91_html-css_onix7l/assets/desk-vegetables-e46ba3ce.jpg" alt="broccoli" loading="lazy" width="295"
+          height="158" />
+      </picture>
+      <ul class="order-list">
+        <li class="order-list-item">
+          <p class="order-list-description">
+            Our baskets are assembled with care and delivered straight to your
+            doorstep, so you can enjoy the taste of fresh fruit without ever
+            leaving your home.
+          </p>
+        </li>
+        <li class="order-list-item">
+          <p class="order-list-description">
+            Whether you're looking for a healthy snack or a thoughtful gift, our
+            fruit baskets are the perfect choice.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="ord-steps">
+      <div class="ord-steps-wrapper">
+        <h3 class="ord-steps-subtitle">
+          3 Easy Steps for Buying Fresh Vegetables
+        </h3>
+        <ol class="ord-steps-list">
+          <li class="ord-steps-item">
+            Just choose the vegetable you want to order by clicking on the
+            checkboxes next to it.
+          </li>
+          <li class="ord-steps-item">
+            Click on the basket and fill out the form.
+          </li>
+          <li class="ord-steps-item">
+            Sit back and relax! Your fresh vegetables basket will be delivered.
+          </li>
+        </ol>
+      </div>
+
+      <picture>
+        <source media="(max-width: 767px)" srcset="/91_html-css_onix7l/assets/mob-girl-3e5e0e98.webp 1x, /91_html-css_onix7l/assets/mob-girl@2x-3b7eb2e2.webp 2x"
+          type="image/webp" />
+        <source media="(max-width: 767px)" srcset="/91_html-css_onix7l/assets/mob-girl-6e067fb9.png 1x, /91_html-css_onix7l/assets/mob-girl@2x-6029db87.png 2x"
+          type="image/png" />
+
+        <source media="(max-width: 1279px)" srcset="/91_html-css_onix7l/assets/tab-girl-c26522d3.webp 1x, /91_html-css_onix7l/assets/tab-girl@2x-e4de3120.webp 2x"
+          type="image/webp" />
+        <source media="(max-width: 1279px)" srcset="/91_html-css_onix7l/assets/tab-girl-29e4c393.png 1x, /91_html-css_onix7l/assets/tab-girl@2x-1bbd3358.png 2x"
+          type="image/png" />
+
+        <source media="(min-width: 1280px)" srcset="/91_html-css_onix7l/assets/desk-girl-854815a5.webp 1x, /91_html-css_onix7l/assets/desk-girl@2x-0503cc2a.webp 2x" type="image/webp" />
+        <source media="(min-width: 1280px)" srcset="/91_html-css_onix7l/assets/desk-girl-926c3686.png 1x, /91_html-css_onix7l/assets/desk-girl@2x-41af1838.png 2x"
+          type="image/png" />
+
+        <img class="ord-steps-img" src="/91_html-css_onix7l/assets/desk-girl-926c3686.png" alt="girl" loading="lazy" width="258" height="319" />
+      </picture>
+    </div>
+
+    <!-- <div class="order-steps-wrapper">
+      <div class="order-text">
+        <h3 class="order-subtitle">3 Easy Steps for Buying Fresh Vegetables</h3>
+        <ol class="order-steps-list">
+          <li class="order-steps-list-item">
+            <p class="order-content">
+              Just choose the vegetable you want to order by clicking on the
+              checkboxes next to it.
+            </p>
+          </li>
+          <li class="order-steps-list-item">
+            <p class="order-content">
+              Click on the basket and fill out the form.
+            </p>
+          </li>
+          <li class="order-steps-list-item">
+            <p class="order-content">
+              Sit back and relax! Your fresh vegetables basket will be
+              delivered.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./img/order/mob-girl.webp 1x, ./img/order/mob-girl@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./img/order/mob-girl.png 1x, ./img/order/mob-girl@2x.png 2x"
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 1279px)"
+          srcset="./img/order/tab-girl.webp 1x, ./img/order/tab-girl@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="./img/order/tab-girl.png 1x, ./img/order/tab-girl@2x.png 2x"
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/order/desk-girl.webp    1x,
+            ./img/order/desk-girl@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="./img/order/desk-girl.png 1x, ./img/order/desk-girl@2x.png 2x"
+          type="image/png"
+        />
+
+        <img
+          class="order-photo"
+          src="./img/order/desk-girl.png"
+          alt="girl"
+          loading="lazy"
+          width="258"
+          height="319"
+        />
+      </picture>
+    </div> -->
+
+    <!-- <section class="order" id="order">
+      <div class="container">
+        <div class="order-container">
+          <h2 class="order-title">
+            To order your vegetable basket, simply follow these easy steps
+          </h2>
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/order/mob-vegetables.webp    1x,
+                ./img/order/mob-vegetables@2x.webp 2x
+              "
+            />
+
+            <source
+              media="(max-width: 1279px)"
+              srcset="
+                ./img/order/tab-vegetables.webp    1x,
+                ./img/order/tab-vegetables@2x.webp 2x
+              "
+            />
+
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/order/desk-vegetables.webp    1x,
+                ./img/order/desk-vegetables@2x.webp 2x
+              "
+            />
+
+            <img
+              class="order-img"
+              src="./img/order/mob-vegetables.webp"
+              alt="broccoli"
+              width="335"
+              height="158"
+            />
+          </picture>
+          <ul class="order-list">
+            <li class="order-list-item">
+              <p class="order-list-description">
+                Our baskets are assembled with care and delivered straight to
+                your doorstep, so you can enjoy the taste of fresh fruit without
+                ever leaving your home.
+              </p>
+            </li>
+            <li class="order-list-item">
+              <p class="order-list-description">
+                Whether you're looking for a healthy snack or a thoughtful gift,
+                our fruit baskets are the perfect choice.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="order-steps-wrapper">
+          <div class="order-text">
+            <h3 class="order-subtitle">
+              3 Easy Steps for Buying Fresh Vegetables
+            </h3>
+            <ol class="order-steps-list">
+              <li class="order-steps-list-item">
+                <p class="order-content">
+                  Just choose the vegetable you want to order by clicking on the
+                  checkboxes next to it.
+                </p>
+              </li>
+              <li class="order-steps-list-item">
+                <p class="order-content">
+                  Click on the basket and fill out the form.
+                </p>
+              </li>
+              <li class="order-steps-list-item">
+                <p class="order-content">
+                  Sit back and relax! Your fresh vegetables basket will be
+                  delivered.
+                </p>
+              </li>
+            </ol>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/order/mob-girl.webp    1x,
+                ./img/order/mob-girl@2x.webp 2x
+              "
+            />
+
+            <source
+              media="(max-width: 1279px)"
+              srcset="
+                ./img/order/tab-gir.webp     1x,
+                ./img/order/tab-girl@2x.webp 2x
+              "
+            />
+
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/order/desk-girl.webp    1x,
+                ./img/order/desk-girl@2x.webp 2x
+              "
+            />
+
+            <img
+              class="order-photo"
+              src="./img/order/mob-girl.webp"
+              alt="girl"
+              width="258"
+              height="319"
+            />
+          </picture>
+        </div>
+      </div>
+    </section> -->
+  </div>
+</section>
+    <!-- Oleksandr -->
+    <!--vegetables-section-->
+<section class="vegetables" id="vegetables">
+  <div class="container vegetables-container">
+    <h2 class="vegetables-title">oRGANIC vegetables</h2>
+    <p class="vegetables-text">
+      Our organic vegetables are hand-picked from local farms and delivered
+      straight to your doorstep, ensuring that you get the freshest and most
+      nutritious produce possible.
+    </p>
+    <ul class="vegetables-list">
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Carrot</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-carrot-e6ef0556.webp 1x, /91_html-css_onix7l/assets/desk-carrot@2x-4fcac366.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-carrot-6aa73e7c.png 1x, /91_html-css_onix7l/assets/desk-carrot@2x-3536d873.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-carrot-f0213057.webp 1x, /91_html-css_onix7l/assets/tab-carrot@2x-21ac750e.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-carrot-125f080d.png 1x, /91_html-css_onix7l/assets/tab-carrot@2x-f88e5bd8.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-carrot-17b5a5de.webp 1x, /91_html-css_onix7l/assets/mob-carrot@2x-b8c48020.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-carrot-5497ddd9.png 1x, /91_html-css_onix7l/assets/mob-carrot@2x-5492eb94.png 2x"
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-carrot-6aa73e7c.png"
+            alt="carrot"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">100 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Brussel sprouts</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-brussel-e177c9c6.webp 1x, /91_html-css_onix7l/assets/desk-brussel@2x-09a42fd5.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-brussel-0160847c.png 1x, /91_html-css_onix7l/assets/desk-brussel@2x-881d9a82.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-brussel-046cd3d7.webp 1x, /91_html-css_onix7l/assets/tab-brussel@2x-9dfe5516.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-brussel-dae30c1a.png 1x, /91_html-css_onix7l/assets/tab-brussel@2x-54399feb.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-brussel-59a15287.webp 1x, /91_html-css_onix7l/assets/mob-brussel@2x-41c745f6.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-brussel-d7d1c43d.png 1x, /91_html-css_onix7l/assets/mob-brussel@2x-5bc72db9.png 2x"
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-brussel-0160847c.png"
+            alt="brussel"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">80 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Tomato</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-tomato-60cc3947.webp 1x, /91_html-css_onix7l/assets/desk-tomato@2x-273b92a7.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-tomato-4fb170dd.png 1x, /91_html-css_onix7l/assets/desk-tomato@2x-ed6947f5.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-tomato-0c15cc1a.webp 1x, /91_html-css_onix7l/assets/tab-tomato@2x-d8564f59.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-tomato-a5462288.png 1x, /91_html-css_onix7l/assets/tab-tomato@2x-7d5b1cd9.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-tomato-9ffb6a14.webp 1x, /91_html-css_onix7l/assets/mob-tomato@2x-8c130f62.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-tomato-f6eec117.png 1x, /91_html-css_onix7l/assets/mob-tomato@2x-a11ec6d3.png 2x"
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-tomato-4fb170dd.png"
+            alt="tomato"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">40 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Eggplant</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-eggplant-97768a57.webp 1x, /91_html-css_onix7l/assets/desk-eggplant@2x-e27f03d0.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-eggplant-64b8a4f5.png 1x, /91_html-css_onix7l/assets/desk-eggplant@2x-cd22df3d.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/desk-eggplant-97768a57.webp 1x, /91_html-css_onix7l/assets/desk-eggplant@2x-e27f03d0.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/desk-eggplant-64b8a4f5.png 1x, /91_html-css_onix7l/assets/desk-eggplant@2x-cd22df3d.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-eggplant-bf498b00.webp 1x, /91_html-css_onix7l/assets/mob-eggplant@2x-50aec412.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-eggplant-5a61aa3f.png 1x, /91_html-css_onix7l/assets/mob-eggplant@2x-c2cc838b.png 2x"
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-eggplant-64b8a4f5.png"
+            alt="eggplant"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">60 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Sweet potatoes</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-potatoes-9afb2525.webp 1x, /91_html-css_onix7l/assets/desk-potatoes@2x-e7a66ff0.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-potatoes-db5f7fbf.png 1x, /91_html-css_onix7l/assets/desk-potatoes@2x-f0b40269.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-potatoes-3a16351b.webp 1x, /91_html-css_onix7l/assets/tab-potatoes@2x-c857eae7.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-potatoes-27377284.png 1x, /91_html-css_onix7l/assets/tab-potatoes@2x-29927450.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-potatoes-e7c8ac6e.webp 1x, /91_html-css_onix7l/assets/mob-potatoes@2x-81f65aea.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-potatoes-6afb7484.png 1x, /91_html-css_onix7l/assets/mob-potatoes@2x-ac5b516f.png 2x"
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-potatoes-db5f7fbf.png"
+            alt="potatoes"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">80 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Leek</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-leek-36967085.webp 1x, /91_html-css_onix7l/assets/desk-leek@2x-4921e0cd.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-leek-119b3954.png 1x, /91_html-css_onix7l/assets/desk-leek@2x-3a8a460f.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-leek-78926b2d.webp 1x, /91_html-css_onix7l/assets/tab-leek@2x-679f5629.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-leek-16ed71f6.png 1x, /91_html-css_onix7l/assets/tab-leek@2x-ceb198d0.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-leek-4240e591.webp 1x, /91_html-css_onix7l/assets/mob-leek@2x-666bc389.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-leek-70ada438.png 1x, /91_html-css_onix7l/assets/mob-leek@2x-aa3bebb9.png 2x"
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-leek-119b3954.png"
+            alt="leek"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">50 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Mushrooms</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-mushrooms-98af98f8.webp 1x, /91_html-css_onix7l/assets/desk-mushrooms@2x-0dca6fb0.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-mushrooms-49a0081e.png 1x, /91_html-css_onix7l/assets/desk-mushrooms@2x-e698c1df.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-mushrooms-b93e796f.webp 1x, /91_html-css_onix7l/assets/tab-mushrooms@2x-504c018d.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-mushrooms-24aa619f.png 1x, /91_html-css_onix7l/assets/tab-mushrooms@2x-57d73a8a.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-mushrooms-d35d4dec.webp 1x, /91_html-css_onix7l/assets/mob-mushrooms@2x-3eb3c569.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/vegetables/mob-mushrooms.png    1x,
+              ./img/vegetables/mob-mushrooms@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-mushrooms-49a0081e.png"
+            alt="mushrooms"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">40 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item">
+        <h3 class="vegetables-item-subtitle">Corn</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-corn-12d209f1.webp 1x, /91_html-css_onix7l/assets/desk-corn@2x-531e36f2.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-corn-e315b955.png 1x, /91_html-css_onix7l/assets/desk-corn@2x-46da4753.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-corn-bcb08d36.webp 1x, /91_html-css_onix7l/assets/tab-corn@2x-4c7db1ed.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/91_html-css_onix7l/assets/tab-corn-1276e16b.png 1x, /91_html-css_onix7l/assets/tab-corn@2x-660846ee.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-corn-afb35ea6.webp 1x, /91_html-css_onix7l/assets/mob-corn@2x-c646f974.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-corn-cea4be3d.png 1x, /91_html-css_onix7l/assets/mob-corn@2x-c9ce6bb8.png 2x"
+            type="image/png"
+          />
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-corn-e315b955.png"
+            alt="corn"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+        <p class="vegetables-item-price">60 UAH / kg</p>
+      </li>
+      <li class="vegetable-list-item list-item-none">
+        <h3 class="vegetables-item-subtitle">Radish</h3>
+        <p class="vegetables-item-text">Plant</p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-radish-85dbad9a.webp 1x, /91_html-css_onix7l/assets/desk-radish@2x-db5e8f21.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-radish-c112cf4e.png 1x, /91_html-css_onix7l/assets/desk-radish@2x-95dfbd5a.png 2x"
+            type="image/png"
+          />
+          <!-- <source media="(min-width: 768px)" srcset="" type="image/" />
+          <source media="(max-width: 767px)" srcset="" type="image/" /> -->
+          <img
+            class="vegetables-item-img"
+            src="/91_html-css_onix7l/assets/desk-radish-c112cf4e.png"
+            alt="radish"
+            width="321"
+            height="261"
+            loading="lazy"
+          />
+        </picture>
+
+        <p class="vegetables-item-price">90 UAH / kg</p>
+      </li>
+    </ul>
+    <button class="vegetables-btn data-modal-open-4" type="button">
+      <span class="vegetables-text-rotate">
+        <svg class="vegetables-svg" width="14" height="14">
+          <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-arrow"></use>
+        </svg>
+        <span class="vegetables-btn-text"> oRDER </span>
+      </span>
+    </button>
+  </div>
+</section>
+
+    <!-- DmytroC -->
+    <!-- -----section contact ------ -->
+<section class="contacts" id="contact">
+  <div class="container contact-container">
+    <div class="contact-container-text">
+      <h2 class="contacts-title">FRESH HARVEST BOX HAS GOT YOU COVERED</h2>
+      <p class="contacts-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+
+      <form class="contact-form">
+        <label for="phone"></label>
+        <input
+          class="contact-input"
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="+380 ()"
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}\[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          required
+        />
+        <button class="contacts-button" type="submit">Recall</button>
+      </form>
+    </div>
+
+    <div class="contact-img">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="/91_html-css_onix7l/assets/mob-buyer-f7ac3e55.webp 1x, /91_html-css_onix7l/assets/mob-buyer@2x-7fd1c4e9.webp 2x"
+          type="image/webp"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="/91_html-css_onix7l/assets/mob-buyer-7ce96904.png 1x, /91_html-css_onix7l/assets/mob-buyer@2x-b245842a.png 2x"
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 1279px)"
+          srcset="/91_html-css_onix7l/assets/tab-buyer-4d3055d8.webp 1x, /91_html-css_onix7l/assets/tab-buyer@2x-c41336ad.webp 2x"
+          type="image/webp"
+        />
+
+        <source
+          media="(max-width: 1279px)"
+          srcset="/91_html-css_onix7l/assets/tab-buyer-5e93318f.png 1x, /91_html-css_onix7l/assets/tab-buyer@2x-eb11764a.png 2x"
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 1280px)"
+          srcset="/91_html-css_onix7l/assets/desk-buyer-de87a4cf.webp 1x, /91_html-css_onix7l/assets/desk-buyer@2x-e360d9ee.webp 2x"
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 1280px)"
+          srcset="/91_html-css_onix7l/assets/desk-buyer-ecc0624b.png 1x, /91_html-css_onix7l/assets/desk-buyer@2x-e720cb09.png 2x"
+          type="image/png"
+        />
+
+        <img
+          src="/91_html-css_onix7l/assets/mob-buyer-f7ac3e55.webp"
+          alt="buyer"
+          width="335"
+          height="357"
+          class="contact-picture"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+    <!-- Maria -->
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-nav-wrapper">
+      <div class="footer-logo-wrapper">
+        <picture class="footer-img">
+          <source
+            srcset="/91_html-css_onix7l/assets/desk-broccoli-f71552b7.webp 1x, /91_html-css_onix7l/assets/desk-broccoli@2x-c196e03f.webp 2x"
+            width="349"
+            height="179"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/91_html-css_onix7l/assets/desk-broccoli-f71552b7.webp 1x, /91_html-css_onix7l/assets/desk-broccoli@2x-c196e03f.webp 2x"
+            width="349"
+            height="179"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="/91_html-css_onix7l/assets/mob-broccoli-092e58a5.webp"
+            srcset="/91_html-css_onix7l/assets/mob-broccoli@2x-0971f780.webp 2x"
+            alt="broccoli"
+            width="335"
+            height="172"
+          />
+        </picture>
+
+        <a class="footer-logo" href="./index.html">
+          <svg width="16" height="16">
+            <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-logo"></use>
+          </svg>
+          veggieboost</a
+        >
+      </div>
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#order">How It Works</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#vegetables">Vegetables</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-info-wrapper">
+      <div class="footer-soc">
+        <ul class="footer-soc-list">
+          <li class="footer-soc-item">
+            <a
+              class="footer-soc-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="facebook link"
+              ><svg width="24" height="24">
+                <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="footer-soc-item">
+            <a
+              class="footer-soc-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="instagram link"
+              ><svg width="24" height="24">
+                <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="footer-soc-item">
+            <a
+              class="footer-soc-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="youtube link"
+              ><svg width="24" height="24">
+                <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-youtube"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <address class="footer-address">
+        <ul class="footer-address-list">
+          <li class="footer-address-item">
+            <a class="footer-tel-link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li class="footer-address-item">
+            <a
+              class="footer-address-link"
+              href="https://www.google.com.ua/maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              >1678 S. Pioneer Road <br />
+              Salt Lake City <br />
+              UT 84104</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</footer>
+
+    <!-- DmytroP -->
+    <!-- <div class="backdrop data-modal"> -->
+<div class="backdrop is-hidden data-modal">
+  <div class="modal modal-mob">
+    <button type="button" class="modal-btn data-modal-close">
+      <svg width="24" height="24">
+        <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Your Order</p>
+
+    <ul class="modal-list">
+      <li class="modal-list-item">
+        <div class="modal-item-wrapper">
+          <p class="modal-list-name">Cabbage Basket</p>
+          <p class="modal-list-type">Plant</p>
+        </div>
+        <picture class="modal-list-pic">
+          <source
+            media="(max-width: 767px)"
+            srcset="data:image/webp;base64,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 1x, /91_html-css_onix7l/assets/mob-cabbage@2x-570847d5.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-cabbage-ca007555.png 1x, /91_html-css_onix7l/assets/mob-cabbage@2x-813d8ff1.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/91_html-css_onix7l/assets/tab-cabbage-cd67048f.webp 1x, /91_html-css_onix7l/assets/tab-cabbage@2x-3fabdc08.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/91_html-css_onix7l/assets/tab-cabbage-e1c7940c.png 1x, /91_html-css_onix7l/assets/tab-cabbage@2x-6190be8a.png 2x"
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-cabbage-ae55d107.webp 1x, /91_html-css_onix7l/assets/desk-cabbage@2x-ffa7e613.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-cabbage-1b696f9d.png 1x, /91_html-css_onix7l/assets/desk-cabbage@2x-99b1cf16.png 2x"
+            type="image/png"
+          />
+          <img
+            src="/91_html-css_onix7l/assets/desk-cabbage-1b696f9d.png"
+            alt="cabbage"
+            loading="lazy"
+            width="94"
+            height="78"
+            class="modal-img"
+          />
+        </picture>
+
+        <input
+          type="checkbox"
+          class="modal-list-checkbox visually-hidden"
+          value="true"
+          id="checkbox-id-1"
+          name="checkbox-id"
+        />
+        <label for="checkbox-id-1" class="checkbox-label"
+          ><span>
+            <svg width="16" height="16" class="checkbox-icon">
+              <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-check"></use>
+            </svg> </span
+        ></label>
+      </li>
+
+      <li class="modal-list-item">
+        <div class="modal-item-wrapper">
+          <p class="modal-list-name">Tomato Basket</p>
+          <p class="modal-list-type">Plant</p>
+        </div>
+        <picture class="modal-list-pic">
+          <source
+            media="(max-width: 767px)"
+            srcset="data:image/webp;base64,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 1x, /91_html-css_onix7l/assets/mob-tomatoes@2x-d8dcfd24.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-tomatoes-c784b763.png 1x, /91_html-css_onix7l/assets/mob-tomatoes@2x-3d6b9448.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/91_html-css_onix7l/assets/tab-tomatoes-1e3ff747.webp 1x, /91_html-css_onix7l/assets/tab-tomatoes@2x-f20c62d4.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/91_html-css_onix7l/assets/tab-tomatoes-55ac2c9b.png 1x, /91_html-css_onix7l/assets/tab-tomatoes@2x-6dbfa273.png 2x"
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-tomatoes-dcf3e02d.webp 1x, /91_html-css_onix7l/assets/desk-tomatoes@2x-4460188e.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-tomatoes-bd75336c.png 1x, /91_html-css_onix7l/assets/desk-tomatoes@2x-dce091bc.png 2x"
+            type="image/png"
+          />
+          <img
+            src="/91_html-css_onix7l/assets/desk-tomatoes-bd75336c.png"
+            alt="tomato"
+            loading="lazy"
+            width="94"
+            height="78"
+            class="modal-img"
+          />
+        </picture>
+
+        <input
+          type="checkbox"
+          class="modal-list-checkbox visually-hidden"
+          value="true"
+          id="checkbox-id-2"
+          name="checkbox-id"
+        />
+        <label for="checkbox-id-2" class="checkbox-label"
+          ><span>
+            <svg width="16" height="16" class="checkbox-icon">
+              <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-check"></use>
+            </svg> </span
+        ></label>
+      </li>
+
+      <li class="modal-list-item">
+        <div class="modal-item-wrapper">
+          <p class="modal-list-name">Tomato Basket</p>
+          <p class="modal-list-type">Plant</p>
+        </div>
+        <picture class="modal-list-pic">
+          <source
+            media="(max-width: 767px)"
+            srcset="data:image/webp;base64,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 1x, /91_html-css_onix7l/assets/mob-basket@2x-924d56c4.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/91_html-css_onix7l/assets/mob-basket-25fd0586.png 1x, /91_html-css_onix7l/assets/mob-basket@2x-73442d92.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/91_html-css_onix7l/assets/tab-basket-d8823db4.webp 1x, /91_html-css_onix7l/assets/tab-basket@2x-73da006d.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/91_html-css_onix7l/assets/tab-basket-201afc19.png 1x, /91_html-css_onix7l/assets/tab-basket@2x-e0271ee3.png 2x"
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-basket-99167f3e.webp 1x, /91_html-css_onix7l/assets/desk-basket@2x-bad7666d.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/91_html-css_onix7l/assets/desk-basket-55b2a43a.png 1x, /91_html-css_onix7l/assets/desk-basket@2x-5168f689.png 2x"
+            type="image/png"
+          />
+          <img
+            src="/91_html-css_onix7l/assets/desk-basket-55b2a43a.png"
+            alt="basket"
+            loading="lazy"
+            width="94"
+            height="78"
+            class="modal-img"
+          />
+        </picture>
+
+        <input
+          type="checkbox"
+          class="modal-list-checkbox visually-hidden"
+          value="true"
+          id="checkbox-id-3"
+          name="checkbox-id"
+        />
+        <label for="checkbox-id-3" class="checkbox-label"
+          ><span>
+            <svg width="16" height="16" class="checkbox-icon">
+              <use href="/91_html-css_onix7l/assets/icons-badf6aff.svg#icon-check"></use>
+            </svg> </span
+        ></label>
+      </li>
+    </ul>
+
+    <form class="modal-form">
+      <label for="name" title="name"></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter full name..."
+        pattern="[А-Яа-я]*?\s[А-Яа-я]*"
+        required
+        class="modal-form-input"
+      />
+
+      <label for="email" title="email"></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter email..."
+        required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        class="modal-form-input"
+      />
+
+      <label for="text" title="card number"></label>
+      <input
+        type="text"
+        id="text"
+        name="text"
+        placeholder="Enter card.."
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+        required
+        class="modal-form-input"
+      />
+
+      <label for="comment" title="comment"></label>
+      <textarea
+        name="comment"
+        id="comment"
+        placeholder="Enter comments..."
+        class="form-textarea"
+      ></textarea>
+
+      <button type="submit" class="form-btn">Submit</button>
+    </form>
+
+    <picture class="modal-pic">
+      <!-- <source
+        media="(max-width: 767px)"
+        srcset="
+          ./img/modal/mob-person.webp    1x,
+          ./img/modal/mob-person@2x.webp 2x
+        "
+        type="image/webp"
+      /> -->
+      <!-- <source
+        media="(max-width: 767px)"
+        srcset="./img/modal/mob-person.jpg 1x, ./img/modal/mob-person@2x.jpg 2x"
+        type="image/jpg"
+      /> -->
+      <source
+        media="(max-width: 1279px)"
+        srcset="/91_html-css_onix7l/assets/tab-person-0a283bde.webp 1x, /91_html-css_onix7l/assets/tab-person@2x-e09a4a60.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 1279px)"
+        srcset="/91_html-css_onix7l/assets/tab-person-3628a211.jpg 1x, /91_html-css_onix7l/assets/tab-person@2x-68eb5977.jpg 2x"
+        type="image/jpg"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="/91_html-css_onix7l/assets/desk-person-8a9e0917.webp 1x, /91_html-css_onix7l/assets/desk-person@2x-98d8c2bf.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="/91_html-css_onix7l/assets/desk-person-29594127.jpg 1x, /91_html-css_onix7l/assets/desk-person@2x-787fb63f.jpg 2x"
+        type="image/jpg"
+      />
+      <img
+        src="/91_html-css_onix7l/assets/desk-person-29594127.jpg"
+        alt="basket"
+        loading="lazy"
+        width="266"
+        height="413"
+        class="modal-person-img"
+      />
+    </picture>
+  </div>
+</div>
+
+
+    
+  </body>
+</html>
