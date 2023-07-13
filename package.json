@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-first-race/",
+    "build": "vite build --base=/91_html-css_onix7l/",
     "preview": "vite preview"
   },
   "devDependencies": {
